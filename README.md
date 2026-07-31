@@ -1,7 +1,24 @@
-<nav>
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="pricing.html">Pricing</a>
-<a href="booking.html">Booking</a>
-<a href="contact.html">Contact</a>
-</nav>
+silver-bike-rentals/
+│
+├── index.html
+├── bikes.html
+├── pricing.html
+├── booking.html
+├── about.html
+├── contact.html
+├── gallery.html
+│
+├── css/
+│   └── style.css
+│
+├── js/
+│   └── script.js
+│
+├── images/
+│   ├── logo.png
+│   ├── bike1.jpg
+│   ├── bike2.jpg
+│   ├── bike3.jpg
+│   └── hero.jpg
+│
+└── README.md
