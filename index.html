@@ -448,3 +448,55 @@ href="https://wa.me/917416671838"
 target="_blank">
 💬
 </a>
+<script>
+const names=[
+"Rahul","Amit","Priya","Neha","Rohit","Vikram","Arjun","Sahil",
+"Pooja","Sneha","Karan","Ankit","Deepak","Aditya","Nikhil",
+"Manish","Riya","Asha","Akash","Varun"
+];
+
+const comments=[
+"Excellent service. The bike was clean and comfortable.",
+"Affordable prices and friendly staff.",
+"Booking was very easy.",
+"Highly recommended for tourists.",
+"The bike was in excellent condition.",
+"Very professional service.",
+"Great experience. Will rent again.",
+"Smooth pickup and return process.",
+"Best bike rental service in the area.",
+"Fast response and quality bikes."
+];
+
+let shown=0;
+
+function loadMoreReviews(){
+
+    const container=document.getElementById("reviewContainer");
+
+    for(let i=0;i<12;i++){
+
+        const card=document.createElement("div");
+
+        card.className="review-card";
+
+        const stars="★★★★★";
+
+        const name=names[Math.floor(Math.random()*names.length)];
+
+        const review=comments[Math.floor(Math.random()*comments.length)];
+
+        card.innerHTML=`
+        <h4>${name}</h4>
+        <div style="color:orange">${stars}</div>
+        <p>${review}</p>
+        `;
+
+        container.appendChild(card);
+    }
+
+    shown+=12;
+}
+
+loadMoreReviews();
+</script>
